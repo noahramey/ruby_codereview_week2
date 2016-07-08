@@ -1,0 +1,9 @@
+<div class="jumbotron">
+  <h1><%= @word.word() %></h1>
+  <ul>
+    <% @word.definitions().each() do |definition| %>
+      <li class="list-group-item">Definition: <%= definition.define() %></li>
+    <% end %>
+  </ul>
+  <a href="/words/<%= @word.id%>/definitions/new" class="btn btn-lg btn-success">Add a new definition</a>
+</div>
