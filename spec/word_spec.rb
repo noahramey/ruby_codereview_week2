@@ -1,5 +1,6 @@
 require('rspec')
 require('word')
+require('definition')
 
 describe(Word) do
   before () do
@@ -57,6 +58,15 @@ describe(Word) do
       word2 = Word.new('puppy')
       word2.save()
       expect(Word.find(word2.id())).to(eq(word2))
+    end
+  end
+
+  describe('#add_definition') do
+    it('adds a definition to the definition array of the word object') do
+      word1 = Word.new('pug')
+      definition1 = Definition.new('small dog')
+      word1.add_definition(definition1)
+      expect(word1.definitions()).to(eq([definition1]))
     end
   end
 end
