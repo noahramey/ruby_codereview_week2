@@ -1,0 +1,14 @@
+<div class="jumbotron">
+  <h1>Add a definition for "<%= @word.word() %>"</h1>
+
+  <form action="/definitions" method="post">
+    <input type="hidden" id="word_id" name="word_id" value="<%= @word.id() %>">
+
+    <div class="form-group">
+      <label for="definition">Home or Work</label>
+      <input type="text" name="definition" id="definition" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-lg btn-success">Add Definition</button>
+  </form>
+</div>
