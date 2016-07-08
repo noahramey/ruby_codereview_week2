@@ -8,7 +8,7 @@ Clone this repository from https://github.com/noahramey/ruby_codereview_week2/
 
 ## Usage
 
-You can see the site live at https://noahramey-word-count.herokuapp.com/
+You can see the site live at https://polar-hollows-37399.herokuapp.com/
 
 ## Contributing
 
