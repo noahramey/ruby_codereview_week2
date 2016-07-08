@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <h1>Words and Definitions</h1>
+
+  <div class="list-group">
+    <% @words.each() do |word| %>
+    <a class="list-group-item" href="/words/<%= word.id() %>"><h3><%= word.word() %></h3></a>
+    <% end %>
+  </div>
+
+  <p>
+    <a href="/words/new" type="button" class="btn btn-lg btn-success">Add a Word</a>
+  </p>
+</div>
